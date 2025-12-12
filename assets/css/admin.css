@@ -1,0 +1,157 @@
+/**
+ * Tenbyte VidInfra Admin Styles
+ * 
+ * @package VidinfraPlayer
+ */
+
+/* Tab Navigation */
+.nav-tab-wrapper {
+  margin-top: 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #ccd0d4;
+}
+
+.vidinfra-player-admin-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.vidinfra-player-admin-content {
+  flex: 1;
+  max-width: 800px;
+}
+
+.vidinfra-player-admin-sidebar {
+  width: 350px;
+  flex-shrink: 0;
+}
+
+.vidinfra-player-sidebar-box {
+  background: #fff;
+  border: 1px solid #ccd0d4;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.vidinfra-player-sidebar-box h3 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.vidinfra-player-sidebar-box h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #1d2327;
+}
+
+.vidinfra-player-sidebar-box code {
+  display: block;
+  background: #f6f7f7;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.vidinfra-player-sidebar-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0;
+}
+
+.vidinfra-player-sidebar-box ul li {
+  padding: 5px 0;
+  border-bottom: 1px solid #f0f0f1;
+}
+
+.vidinfra-player-sidebar-box ul li:last-child {
+  border-bottom: none;
+}
+
+.vidinfra-player-sidebar-box ul li code {
+  display: inline;
+  background: #f0f0f1;
+  padding: 2px 6px;
+  margin: 0 5px 0 0;
+  font-weight: 600;
+  color: #2271b1;
+}
+
+.vidinfra-player-admin-content .form-table th {
+  width: 200px;
+}
+
+/* Color Picker Input */
+.vidinfra-color-picker {
+  max-width: 100px;
+}
+
+/* Watermark Settings Spacing */
+#watermark_font_opacity,
+#watermark_font_opacity_line2 {
+  width: 80px;
+}
+
+/* Watermark Line Headings */
+.form-table tr:has(th strong) {
+  background: #f6f7f7;
+  border-top: 2px solid #c3c4c7;
+  border-bottom: 1px solid #c3c4c7;
+}
+
+.form-table tr:has(th strong) th {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.form-table tr:has(th strong) td {
+  display: none;
+}
+
+/* Copy Feedback */
+.copy-feedback {
+  color: #00a32a;
+  font-weight: 600;
+  margin-left: 8px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hide watermark fields by default to prevent flicker */
+.vidinfra-watermark-field-line1,
+.vidinfra-watermark-field-line2,
+.vidinfra-watermark-divider {
+  display: none !important;
+}
+
+/* Allow fields to be shown when explicitly set by JavaScript */
+.vidinfra-watermark-field-line1[style*="display: table-row"],
+.vidinfra-watermark-field-line2[style*="display: table-row"],
+.vidinfra-watermark-divider[style*="display: table-row"] {
+  display: table-row !important;
+}
+
+/* Responsive layout */
+@media (max-width: 1200px) {
+  .vidinfra-player-admin-wrapper {
+    flex-direction: column;
+  }
+
+  .vidinfra-player-admin-sidebar {
+    width: 100%;
+    max-width: 800px;
+  }
+}
