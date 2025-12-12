@@ -26,10 +26,10 @@ A secure and feature-rich WordPress plugin to embed Vidinfra video player with i
 
 ### Shortcode
 
-Use the `[vidinfra_player]` shortcode to embed videos:
+Use the `[vidinfra]` shortcode to embed videos:
 
 ```
-[vidinfra_player video_id="59777392"]
+[vidinfra video_id="59777392"]
 ```
 
 **Note:** Only `video_id` is required. The `library_id` will be taken from the default settings configured in the admin panel. You can override it in the shortcode if needed.
@@ -55,13 +55,13 @@ Use the `[vidinfra_player]` shortcode to embed videos:
 Override the default library ID for a specific video:
 
 ```
-[vidinfra_player video_id="59777392" library_id="9876543"]
+[vidinfra video_id="59777392" library_id="9876543"]
 ```
 
 #### Example with Additional Parameters
 
 ```
-[vidinfra_player video_id="59777392" width="800" height="450" autoplay="false" loop="false" muted="false" controls="true" preload="true" aspect_ratio="16:9" loading="lazy" class_name="featured-video"]
+[vidinfra video_id="59777392" width="800" height="450" autoplay="false" loop="false" muted="false" controls="true" preload="true" aspect_ratio="16:9" loading="lazy" class_name="featured-video"]
 ```
 
 #### Example with Custom Dimensions
@@ -69,7 +69,7 @@ Override the default library ID for a specific video:
 When you specify `width` and/or `height`, the Vidinfra player library will apply those dimensions to the generated iframe:
 
 ```
-[vidinfra_player library_id="1234567" video_id="59777392" width="800" height="450"]
+[vidinfra library_id="1234567" video_id="59777392" width="800" height="450"]
 ```
 
 #### Example with Aspect Ratio
@@ -77,7 +77,7 @@ When you specify `width` and/or `height`, the Vidinfra player library will apply
 The `aspect_ratio` parameter is passed to the Vidinfra player library to control the iframe's aspect ratio:
 
 ```
-[vidinfra_player library_id="1234567" video_id="59777392" aspect_ratio="16:9"]
+[vidinfra library_id="1234567" video_id="59777392" aspect_ratio="16:9"]
 ```
 
 **Note:** All styling and responsiveness is handled by the Vidinfra player library. The plugin generates a simple container div, and the library creates its own iframe with built-in styles.
@@ -119,7 +119,7 @@ The plugin follows WordPress coding standards and provides the following:
 - Action: `plugins_loaded` - Initialize the plugin
 - Action: `wp_enqueue_scripts` - Enqueue frontend assets
 - Action: `admin_enqueue_scripts` - Enqueue admin assets
-- Shortcode: `vidinfra_player` - Render video player
+- Shortcode: `vidinfra` - Render video player
 
 ### File Structure
 

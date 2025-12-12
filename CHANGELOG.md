@@ -23,7 +23,7 @@
 - ✅ Library ID now uses default from admin settings
 - ✅ Only `video_id` is required in shortcode
 - ✅ Users can override library ID in shortcode if needed
-- ✅ Example: `[vidinfra_player video_id="59777392"]`
+- ✅ Example: `[vidinfra video_id="59777392"]`
 
 **Dynamic Watermark Feature:**
 
@@ -179,13 +179,13 @@ Updated the plugin to match the official Vidinfra PlayerOptions TypeScript inter
 **Minimum required shortcode:**
 
 ```
-[vidinfra_player library_id="1234567" video_id="59777392"]
+[vidinfra library_id="1234567" video_id="59777392"]
 ```
 
 **With new optional parameters:**
 
 ```
-[vidinfra_player
+[vidinfra
     library_id="1234567"
     video_id="59777392"
     player_id="custom-player"
@@ -202,13 +202,13 @@ If you were previously using the plugin without `library_id`:
 **Before:**
 
 ```
-[vidinfra_player video_id="59777392"]
+[vidinfra video_id="59777392"]
 ```
 
 **After (update required):**
 
 ```
-[vidinfra_player library_id="YOUR_LIBRARY_ID" video_id="59777392"]
+[vidinfra library_id="YOUR_LIBRARY_ID" video_id="59777392"]
 ```
 
 Or set a default library_id in Settings > Vidinfra Player.

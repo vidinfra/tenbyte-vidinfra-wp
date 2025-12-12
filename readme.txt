@@ -32,17 +32,17 @@ Tenbyte VidInfra is a lightweight and secure WordPress plugin that allows you to
 
 **Basic Shortcode:**
 
-`[vidinfra_player library_id="1234567" video_id="59777392"]`
+`[vidinfra library_id="1234567" video_id="59777392"]`
 
 **Note:** Both `library_id` and `video_id` are required parameters.
 
 **With Autoplay and Loop:**
 
-`[vidinfra_player library_id="1234567" video_id="59777392" autoplay="true" loop="true" muted="true"]`
+`[vidinfra library_id="1234567" video_id="59777392" autoplay="true" loop="true" muted="true"]`
 
 **With Custom Dimensions:**
 
-`[vidinfra_player library_id="1234567" video_id="59777392" width="800" height="450"]`
+`[vidinfra library_id="1234567" video_id="59777392" width="800" height="450"]`
 
 = Available Parameters =
 
@@ -73,7 +73,7 @@ Tenbyte VidInfra is a lightweight and secure WordPress plugin that allows you to
 1. Upload the `vidinfra-player` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to Settings > Vidinfra Player to configure default settings
-4. Use the `[vidinfra_player]` shortcode or Gutenberg block to embed videos
+4. Use the `[vidinfra]` shortcode or Gutenberg block to embed videos
 
 == Frequently Asked Questions ==
 
