@@ -98,3 +98,11 @@ tests/_support/_generated/
 coverage/
 .coverage
 htmlcov/
+
+# Development and internal documentation
+PRE_SUBMISSION_CHECKLIST.md
+CONTRIBUTING.md
+.gitattributes
+.distignore
+phpcs.xml
+SECURITY.md
