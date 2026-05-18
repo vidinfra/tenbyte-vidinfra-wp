@@ -1023,23 +1023,23 @@ class Vidinfra_Player {
         <div id="<?php echo esc_attr($unique_id); ?>"></div>
         <script>
         (function() {
-            if (typeof Vidinfra !== 'undefined') {
+            if (typeof TenbytePlayer !== 'undefined') {
                 initPlayer();
             } else {
                 document.addEventListener('DOMContentLoaded', function() {
-                    // Wait for Vidinfra library to load
+                    // Wait for TenbytePlayer library to load
                     var checkInterval = setInterval(function() {
-                        if (typeof Vidinfra !== 'undefined') {
+                        if (typeof TenbytePlayer !== 'undefined') {
                             clearInterval(checkInterval);
                             initPlayer();
                         }
                     }, 100);
                 });
             }
-            
+
             function initPlayer() {
                 try {
-                    var player = new Vidinfra.Player("<?php echo esc_js($unique_id); ?>", <?php echo wp_json_encode($config); ?>);
+                    var player = new TenbytePlayer("<?php echo esc_js($unique_id); ?>", <?php echo wp_json_encode($config); ?>);
                     
                     <?php if (!empty($watermark_configs)) : ?>
                     // Add dynamic watermarks if configured
